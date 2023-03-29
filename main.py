@@ -1,6 +1,5 @@
 from pyrogram import Client, filters
 from pyrogram.enums import UserStatus, ChatMemberStatus
-import uvloop
 import datetime
 import asyncio
 
@@ -9,8 +8,6 @@ import asyncio
 api_id = 0
 api_hash = ''
 bot_token = ''
-
-uvloop.install()
 
 app = Client('app', api_id, api_hash, bot_token=bot_token)
 
