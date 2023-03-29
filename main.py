@@ -11,7 +11,7 @@ bot_token = ''
 
 app = Client('app', api_id, api_hash, bot_token=bot_token)
 
-@app.on_message(filters.channel | filters.group & filters.command(['remove_inactive']))
+@app.on_message((filters.channel | filters.group) & filters.command(['remove_inactive']))
 async def remove(_, message):
 
     members = await app.get_chat_members_count(message.chat.id)
