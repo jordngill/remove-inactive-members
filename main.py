@@ -6,9 +6,9 @@ import asyncio
 
 # Edit your credentials here
 
-api_id = 26763788
-api_hash = '5bd46d55b597eeced05298b19ba786be'
-bot_token = '5622524670:AAErCP1WQzycLrQ73x_ONt0xpBcgDVZp-Lc'
+api_id = 0
+api_hash = ''
+bot_token = ''
 
 uvloop.install()
 
